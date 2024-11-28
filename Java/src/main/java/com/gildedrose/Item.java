@@ -6,13 +6,18 @@ public class Item {
 
     public int sellIn;
 
-    public bool isPerishable = True;
+    public boolean isPerishable = true;
 
-    public int[][] qualityEvolution;
+    public int[][] qualityEvolutionRatesTable;
 
     public int quality;
 
+<<<<<<< HEAD
+    public Item(String name, int sellIn, boolean isPerishable, int[][] qualityEvolution, int quality) 
+    {
+=======
     public Item(String name, int sellIn, bool isPerishable, int[][] qualityEvolution, int quality) {
+>>>>>>> 859d0379a5db0ca77e04ceb37bd0e5e80dd12020
         this.name = name;
         this.sellIn = sellIn;
         this.isPerishable = isPerishable; 
