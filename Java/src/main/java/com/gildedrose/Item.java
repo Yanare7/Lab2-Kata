@@ -6,13 +6,13 @@ public class Item {
 
     public int sellIn;
 
-    public bool isPerishable = True;
+    public boolean isPerishable = true;
 
-    public int[][] qualityEvolution;
+    public int[][] qualityEvolutionRatesTable;
 
     public int quality;
 
-    public Item(String name, int sellIn, bool isPerishable, int[][] qualityEvolution, int quality) 
+    public Item(String name, int sellIn, boolean isPerishable, int[][] qualityEvolution, int quality) 
     {
         this.name = name;
         this.sellIn = sellIn;
