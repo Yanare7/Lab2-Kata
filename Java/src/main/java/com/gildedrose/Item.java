@@ -12,8 +12,7 @@ public class Item {
 
     public int quality;
 
-    public Item(String name, int sellIn, bool isPerishable, int[][] qualityEvolution, int quality) 
-    {
+    public Item(String name, int sellIn, bool isPerishable, int[][] qualityEvolution, int quality) {
         this.name = name;
         this.sellIn = sellIn;
         this.isPerishable = isPerishable; 
