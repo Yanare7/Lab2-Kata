@@ -7,27 +7,27 @@ public class TexttestFixture {
         {
                 
                 //Classic Item 
-                new Item("Ketchup", 15, true,  new int[][] { {15, -1}, {0,-2} } ,15 ), // 
-                new Item("Apple", 7, true,  new int[][] { {30, -1},{0,-2} } ,30 ),
-                new Item("Pear", 5, true,  new int[][] { {35, -1},{0,-2} } ,35 ),
+                new ClassicItem("Ketchup", 15,  new int[][] { {15, -1}, {0,-2} } ,15 ), // 
+                new ClassicItem("Apple", 7,  new int[][] { {30, -1},{0,-2} } ,30 ),
+                new ClassicItem("Pear", 5,  new int[][] { {35, -1},{0,-2} } ,35 ),
 
                 //Brie Item 
-                new Item("Aged Brie", 10, true, new int[][] { {10, 1},{0,2} }, 0 ),
-                new Item("Camembert", 30, true, new int[][] { {30, 1}, {5,2}}, 0 ),
+                new ClassicItem("Aged Brie", 10, new int[][] { {10, 1},{0,2} }, 0 ),
+                new ClassicItem("Camembert", 30, new int[][] { {30, 1}, {5,2}}, 0 ),
 
 
                 //BackStage Item 
-                new Item("Backstage passes to a TAFKAL80ETC concert", 20, true, new int[][] { {20,1}, {10, 2},{5,3},{0,-50} }, 0 ),
-                new Item("Backstage passes to a Bigflo & Oli concert", 30, true, new int[][] { {30, 1},{10,2}, {5,3},{0,-50}}, 5 ),
-                new Item("Backstage passes to Tupac concert", 50, true, new int[][] { {50, 0},{20,1}, {5,5},{0,-50}}, 10 ),
+                new ClassicItem("Backstage passes to a TAFKAL80ETC concert", 20, new int[][] { {20,1}, {10, 2},{5,3},{0,-50} }, 0 ),
+                new ClassicItem("Backstage passes to a Bigflo & Oli concert", 30, new int[][] { {30, 1},{10,2}, {5,3},{0,-50}}, 5 ),
+                new ClassicItem("Backstage passes to Tupac concert", 50, new int[][] { {50, 0},{20,1}, {5,5},{0,-50}}, 10 ),
 
                 //Sulfuras, Hand of Ragnaros
-                new Item("Sulfuras, Hand of Ragnaros", 10, false,  new int[][] { {10, 0} } ,80 ),
-                new Item("Sulfuras, Hand of Ragnaros", -1, false,  new int[][] { {10, 0} } ,80 ),
+                new UnperishableItem("Sulfuras, Hand of Ragnaros", 10,  new int[][] { {10, 0} } ,80 ),
+                new UnperishableItem("Sulfuras, Hand of Ragnaros", -1,  new int[][] { {10, 0} } ,80 ),
 
 
                 //Pasta 
-                new Item("Pasta", 80, true,  new int[][] { {80, 0} , {10,-2}} ,40 )
+                new ClassicItem("Pasta", 80,  new int[][] { {80, 0} , {10,-2}} ,40 )
         };
 
 
