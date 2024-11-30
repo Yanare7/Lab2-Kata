@@ -8,7 +8,7 @@ public class UnperishableItem extends Item
     public static final int MAX_QUALITY = 50;
 
 
-    public UnperishableItem(String name, int sellIn, int quality, int[][] qualityEvolutionRatesTable) 
+    public UnperishableItem(String name, int sellIn, int[][] qualityEvolutionRatesTable, int quality) 
     {
         super(name, sellIn, quality);
 

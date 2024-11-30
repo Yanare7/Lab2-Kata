@@ -8,7 +8,7 @@ public class ClassicItem extends Item
     public static final int MIN_QUALITY = 0;
     public static final int MAX_QUALITY = 50;
 
-    public ClassicItem(String name, int sellIn, int quality, int[][] qualityEvolutionRatesTable) 
+    public ClassicItem(String name, int sellIn, int[][] qualityEvolutionRatesTable, int quality) 
     {
         super(name, sellIn, quality);
 
