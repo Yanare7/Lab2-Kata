@@ -4,7 +4,9 @@ package com.gildedrose;
 public class UnperishableItem extends Item 
 {
     protected int[][] qualityEvolutionRatesTable;
-    
+    public static final int MIN_QUALITY = 0;
+    public static final int MAX_QUALITY = 50;
+
 
     public UnperishableItem(String name, int sellIn, int quality, int[][] qualityEvolutionRatesTable) 
     {
@@ -16,7 +18,7 @@ public class UnperishableItem extends Item
     @Override
     public void update() 
     {
-        updateQuality();
+        this.updateQuality();
     }
 
 
