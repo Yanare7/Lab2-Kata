@@ -25,7 +25,7 @@ public class ClassicItem extends Item
 
     public void updateQuality()
     {
-        int newQuality = getQualitySlope();
+        int newQuality = quality + getQualitySlope();
 
         if (newQuality <= MIN_QUALITY)
         {
@@ -50,15 +50,16 @@ public class ClassicItem extends Item
 
     public int getQualitySlope()
     {
-        for(int i =0; i<qualityEvolutionRatesTable.length; i++)
+        for (int i=0;i<qualityEvolutionRatesTable.length; i++)
         {
-            if (sellIn<=qualityEvolutionRatesTable[i][0])
+            if (sellIn>qualityEvolutionRatesTable[i][0])
             {
-                return qualityEvolutionRatesTable[i][1];
+                return qualityEvolutionRatesTable[i-1][1];
             }
         }
-        System.out.println("Error wesh "+name);
-        throw new IllegalStateException("No matching quality slope found for item: " + name);    
+        return qualityEvolutionRatesTable[qualityEvolutionRatesTable.length-1][1];
+        
+        //throw new IllegalStateException("No matching quality slope found for item: " + name);    
     }
 
 
