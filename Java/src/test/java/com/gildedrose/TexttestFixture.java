@@ -1,5 +1,5 @@
 package com.gildedrose;
-
+/* 
 public class TexttestFixture {
     public static void main(String[] args) {
 
@@ -51,7 +51,7 @@ public class TexttestFixture {
     }
 
 }
-
+*/
                 /* 
                 new Item("+5 Dexterity Vest", 10, 20), //
                 new Item("Aged Brie", 2, 0), //
@@ -64,3 +64,5 @@ public class TexttestFixture {
                 // this conjured item does not work properly yet
                 new Item("Conjured Mana Cake", 3, 6) };
                 */
+
+                
