@@ -45,9 +45,11 @@ The initial implementation of the Gilded Rose system was highly centralized, wit
    - Created subclasses to handle different categories of items:
      - `LegendaryItem`: For items like "Sulfuras" that do not degrade in quality.
      - `ClassicItem`: For regular items with standard quality degradation rules.
-     - `TimeSensitiveItem`: For items like "Aged Brie" or "Backstage Passes" with unique evolution patterns over time.
+     - `DynamicQualityItem`: For items like "Aged Brie" or "Backstage Passes" with unique evolution patterns over time.
 
-4. **Adherence to Open/Closed Principle**:
+4. **DynamicQualityItem Implementation**:
+   - This class uses a qualityEvolutionTable to define custom quality degration rules. This tabl is a 2D array where each entry consist of two integers: the first indicates the sellIn threshold, and the second represents quality change rate applied when sellIn is within the specified range.
+5. **Adherence to Open/Closed Principle**:
 
    - The refactored design enables easy addition of new item types by creating a new subclass without modifying existing logic.
 
