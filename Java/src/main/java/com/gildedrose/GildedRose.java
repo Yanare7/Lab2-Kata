@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-class GildedRose 
+public class GildedRose 
 {
     private Item[] items;
 
@@ -30,9 +30,10 @@ class GildedRose
         GildedRose gildedRose = new GildedRose(items);
         for (int i=0; i<4; i++){
             gildedRose.update();
+            for (Item item : items) {
+                System.out.println(item);
+            }
         }
-    }
-
-    
+    }    
 
 } 
