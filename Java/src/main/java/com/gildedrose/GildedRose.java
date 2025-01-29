@@ -10,17 +10,6 @@ class GildedRose
         this.items = items;
     }
 
-    public void main(){
-        Item[] items = { 
-            new ClassicItem("Ketchup", 15, 35),
-            new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35),
-            new LegendaryItem("Sulfuras, Hand of Ragnaros", 15, 80) 
-        };
-        for (int i=0; i<4; i++){
-            update();
-        }
-    }
-
     public void update() 
     {
         for (int i = 0; i < items.length; i++) 
@@ -28,6 +17,20 @@ class GildedRose
             items[i].update();
         }
     }
+
+    public static void main(String[] args){
+        Item[] items = { 
+            new ClassicItem("Ketchup", 15, 35),
+            new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35),
+            new LegendaryItem("Sulfuras, Hand of Ragnaros", 15, 80) 
+        };
+        GildedRose gildedrose = new GildedRose(items);
+        for (int i=0; i<4; i++){
+            gildedRose.update();
+        }
+    }
+
+    
 
 }                
             /*
@@ -51,7 +54,7 @@ class GildedRose
 
                         if (items[i].sellIn < 6) {
                             if (items[i].quality < 50) {
-                                items[i].quality = items[i].quality + 1;
+                                items[i].quality = items[i].quality + 1;git a
                             }
                         }
                     }
