@@ -19,6 +19,7 @@ class GildedRose
     }
 
     public static void main(String[] args){
+        int[][] qualityEvolutionRatesTable = { {20, 1}, {0, -1} };
         Item[] items = { 
             new ClassicItem("Ketchup", 15, 35),
             new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35),
