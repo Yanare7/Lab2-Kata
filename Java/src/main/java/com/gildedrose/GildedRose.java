@@ -2,7 +2,7 @@ package com.gildedrose;
 
 class GildedRose 
 {
-    Item[] items;
+    private Item[] items;
 
 
     public GildedRose(Item[] items) 
@@ -20,11 +20,12 @@ class GildedRose
 
     public static void main(String[] args){
         int[][] qualityEvolutionRatesTable = { {20, 1}, {0, -1} };
-        Item[] items = { 
-            new ClassicItem("Ketchup", 15, 35),
-            new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35),
-            new LegendaryItem("Sulfuras, Hand of Ragnaros", 15, 80) 
-        };
+
+        List<Item> items = new ArrayList<>();
+        items.add(new ClassicItem("Ketchup", 15, 35));
+        items.add(new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35));
+        items.add(new LegendaryItem("Sulfuras, Hand of Ragnaros", 15, 80));
+
         GildedRose gildedrose = new GildedRose(items);
         for (int i=0; i<4; i++){
             gildedRose.update();
