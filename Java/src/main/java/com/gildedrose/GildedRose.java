@@ -10,6 +10,16 @@ class GildedRose
         this.items = items;
     }
 
+    public void main(){
+        Item[] items = { 
+            new ClassicItem("Ketchup", 15, 35),
+            new DynamicQualityItem("Aged Brie", 20, qualityEvolutionRatesTable, 35),
+            new LegendaryItem("Sulfuras, Hand of Ragnaros", 15, 80) 
+        };
+        for (int i=0; i<4; i++){
+            update();
+        }
+    }
 
     public void update() 
     {
